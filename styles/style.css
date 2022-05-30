@@ -1,0 +1,445 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+}
+header{
+    position: fixed;
+    width: 100%;
+    background-color: #131313;
+    padding: 10px 0;
+}
+.content{
+    padding-top: 80px;
+    background-color: #252525;
+}
+.body_wraper{
+    background-color: #252525;
+}
+.container{
+    max-width: 1160px;
+    margin: 0 auto;
+}
+.header_wraper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+}
+.header_wraper p{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 16px;
+}
+.logo img{
+    width: 50px;
+}
+
+.header_menu{
+    display: flex;
+    align-items: center;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 16px;
+}
+
+.header_menu-item{
+    margin-left: 20px;
+    position: relative;
+}
+
+.header_menu-item::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    transform: scale(0);
+    transition: transform .3s;
+}
+
+.header_menu-item:hover::before{
+    transform: scale(1);
+}
+
+.header_menu-item a{
+    color: #868686;
+    transition: color .3s;
+}
+
+.header_menu-item a:hover{
+    color: #fff;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+
+}
+.logo p{
+    color: #ffffff;
+}
+.header_info_wraper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 26px;
+    color: aliceblue;
+}
+.header_info_wraper p{
+    font-size: 22px;
+}
+.header_order_button{
+    display: block;
+    background: #4685cf;
+    padding: 10px 15px 10px 15px;
+    max-width: 120px;
+    color: aliceblue;
+    border-radius: 10px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.style_choice h3{
+    padding: 180px 0px 40px 0px;
+    text-align: center;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 26px;
+    color: aliceblue;
+}
+.style_choice_examples{
+    display: flex;
+}
+.style_choice_examples img{
+    display: flex;
+    width: 300px;
+    padding: 0 10px 0 0;
+}
+.style_choice_examples{
+    justify-content: center;
+}
+.style_choice_examples p{
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 26px;
+    color: aliceblue;
+    text-align: center;
+}
+.examples_photo{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.examples_text{
+    padding: 150px 0 0 0;
+    text-align: center;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 26px;
+    line-height: 26px;
+    color: aliceblue;
+}
+.examples_photo img{
+    width: 200px;
+    margin: 3px;
+}
+.more_examples_a{
+    display: block;
+    background: #717171;
+    padding: 10px 15px 10px 15px;
+    max-width: 260px;
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    font-size: 15px;
+    text-align: center;
+    justify-content: center;   
+    margin: 0 auto;
+    border: 3px solid #bababa;
+    font-family: "Roboto";
+}
+
+.paralax{
+    background-image: url('https://w-dog.ru/wallpapers/9/17/426073775181833/avstraliya-okean-bereg-poberezhe-kamni-sirenevyj-vecher-zakat-nebo-oblaka.jpg');
+    background-repeat: no-repeat;
+    width: 100%;
+    margin-top: 30px;
+    height: 300px;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.price{
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 26px;
+    color: #191919;
+    text-align: center;
+    margin-bottom: 300px;
+    margin-top: 0 auto;
+    box-sizing: border-box;
+    max-width: 800px;
+    margin: 0 auto;
+    background: url('https://html5book.ru/wp-content/uploads/2015/07/background39.png');
+    border-radius: 10px;
+    padding: 30px 40px;
+    margin-top: 40px;
+    letter-spacing: 2px;
+}
+.price_bottom{
+    padding-top: 40px;
+    background-color: #252525;
+}
+
+.calc_size{
+    display: block;
+    background-clip: padding-box;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.calcBut{
+    text-decoration: none;
+    display: inline-block;
+    width: 140px;
+    height: 45px;
+    line-height: 45px;
+    border-radius: 45px;
+    margin: 10px 20px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 11px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 2px;
+    font-weight: 600;
+    color: #524f4e;
+    background: white;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, .1);
+    transition: .3s;
+}
+.calcBut:hover{
+    background: #2EE59D;
+    box-shadow: 0 15px 20px rgba(46, 229, 157, .4);
+    color: white;
+    transform: translateY(-7px);
+}
+
+.calcButSend{
+    text-decoration: none;
+    display: inline-block;
+    width: 140px;
+    height: 45px;
+    line-height: 45px;
+    border-radius: 45px;
+    margin: 10px 20px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 11px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 2px;
+    font-weight: 600;
+    color: #524f4e;
+    background: white;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, .1);
+    transition: .3s;
+}
+
+.calcButSend:hover{
+    background: #2EE59D;
+    box-shadow: 0 15px 20px rgba(46, 229, 157, .4);
+    color: white;
+    transform: translateY(-7px);
+}
+
+.calc__inner{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    
+}
+
+.calc__input-number, 
+.calc__select{
+    font-size: 15px;
+    outline: none;
+    padding: 5px;
+    border-radius: 5px;
+    border: thick double #3f3695;
+}
+
+.calc__inner > div{
+    text-align: center;
+    width: 100%;
+}
+
+.calc_checkbox{
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.calc__checkbox img{
+    width: 40px;
+    padding: 5px;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.calc__checkbox{
+    border: 3px solid rgb(118, 118, 118);
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+    border-radius: 10px;
+   
+}
+.calc__input-number{
+    max-width: 100px;
+    text-align: center;
+}
+
+.popup_form{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0,0.8);
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.5s all;
+}
+.popup_form.active{
+    opacity: 1;
+    pointer-events: all;
+    transition: 0.5s all;
+}
+
+.popup.active{
+    transform: translate(-50%, -50%) scale(1);
+    transition: 0.5s all;
+}
+
+.popup{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    background: #fff;
+    width: 400px;
+    padding: 25px;
+    transition: 0.5s all;
+    border-radius: 10px;
+}
+.close_popup{
+    width: 30px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+.popup label{
+    width: 100%;
+    margin-bottom: 20px;
+    display: block;
+    font-display: column-reverse;
+}
+.popup .label__text{
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 1000;
+    color: #3f3695;
+    margin-bottom: 5px;
+}
+.popup input{
+    height: 45px;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #b5b5b5;
+}
+.popup input:focus{
+    border-bottom: 2px solid #4685cf;
+}
+.popup button{
+    text-decoration: none;
+    display: inline-block;
+    width: 140px;
+    height: 45px;
+    line-height: 45px;
+    border-radius: 45px;
+    margin: 10px 20px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 11px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 2px;
+    font-weight: 600;
+    color: #524f4e;
+    background: white;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, .1);
+    transition: .3s;
+}
+.popup button:hover{
+    background: #2EE59D;
+    box-shadow: 0 15px 20px rgba(46, 229, 157, .4);
+    color: white;
+    transform: translateY(-7px);
+}
+
+.footer{
+    position: relative;
+    left: 0; bottom: 0;
+    background-color: #131313;
+    color: #fff;
+    width: 100%;
+    padding: 10px 0;
+}
+.footer_wraper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 26px;
+    color: aliceblue;
+    padding-left: 30px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+.vk{
+    width: 40px;
+    padding: 0 0 0 20px;
+}
+
+.popup_form input._error{
+    box-shadow: 0 0 15px #ff0000;
+}
